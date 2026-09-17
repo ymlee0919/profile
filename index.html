@@ -1,496 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Yuriesky Méndez Lee - Software Engineer</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Yuriesky Méndez - Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+        <link href="/public/img/favicon.png" rel="icon">
+		
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon-sm.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+		<link rel="stylesheet" href="./public/css/styles.css">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Loading Screen -->
+		<div class="loading-screen" id="loadingScreen">
+			<div class="loader-ring"></div>
+			<div class="loading-text">Initializing Experience...</div>
+		</div>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+		<!-- Ambient Background -->
+		<div class="ambient-bg">
+			<div class="orb orb-1"></div>
+			<div class="orb orb-2"></div>
+			<div class="orb orb-3"></div>
+		</div>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
+		<!-- Grid Overlay -->
+		<div class="grid-overlay"></div>
 
-<body class="index-page">
+		<!-- Main Container -->
+		<div class="container">
+			<!-- Header -->
+			<div class="header" id="mainHeader">
+				<div class="logo">
+					<img src="./public/img/main-logo.png" width="1024" height="1024" style="max-width: 100px; max-height: 100px">
+				</div>
+				<h1 class="brand-name">Yuriesky Méndez Lee</h1>
+				<p class="tagline">Software Engineer</p>
+			</div>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+			<!-- Menu Grid -->
+			<div class="menu-grid" id="menuGrid">
+				<div class="main-menu-item initial-load" data-section="about">
+					<div class="menu-badge">ME</div>
+					<div class="menu-title">About me</div>
+				</div>
+				<div class="main-menu-item initial-load" data-section="experience">
+					<div class="menu-badge">EX</div>
+					<div class="menu-title">Experience</div>
+				</div>
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+				<div class="main-menu-item initial-load" data-section="skills">
+					<div class="menu-badge">SK</div>
+					<div class="menu-title">Skills</div>
+				</div>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#about"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#resume"><i class="bi bi-journal-code navicon"></i><span>Resume</span></a></li>
-        <li><a href="#personal"><i class="bi bi-person-check navicon"></i><span>Personal</span></a></li>
-        <!--li><a href="#hobbies"><i class="bi bi-emoji-smile-upside-down navicon"></i><span>Hobbies</span></a></li-->
-        <!--li><a href="#portfolio"><i class="bi bi-suitcase-lg navicon"></i><span>Portfolio</span></a></li-->
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
+				<div class="main-menu-item initial-load" data-section="personal">
+					<div class="menu-badge">PE</div>
+					<div class="menu-title">Personal</div>
+				</div>
 
-  </header>
+				<div class="main-menu-item initial-load" data-section="work">
+					<div class="menu-badge">WK</div>
+					<div class="menu-title">Work</div>
+				</div>
+				
+				<div class="main-menu-item initial-load" data-section="contact">
+					<div class="menu-badge">CT</div>
+					<div class="menu-title">Contact</div>
+				</div>
+			</div>
 
-  <main class="main">
+			<!-- Content Sections -->
+			<div id="contentArea">
+				<!-- About Section -->
+				<div class="content-section" id="about" data-abbr="ME" data-section="About me" data-sub="Passionate programmer, committed to excellence">
+					<div class="section-header-small">
+    <div class="small-logo">
+        <img src="./public/img/logo-sm.png" width="200" height="200" style="max-width: 32px; max-height: 32px">
+    </div>
+    <div class="small-brand">
+        <h3>Yuriesky Méndez Lee</h3>
+        <p>Software Engineer</p>
+    </div>
+</div>
 
-    <!-- About Section -->
-    <section id="about" class="about section" style="box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile.jpg" class="img-fluid img-circle" style="border-radius: 50%;box-shadow: 0 0 14px #909090;" alt="">
-            <br>
-            <div class="text-center pt-5">
-              <a href="./assets/docs/Profile-EN.pdf" target="_blank" class="btn btn-outline-light">Download CV</a>
-            </div>
-          </div>
-          <div class="col-lg-8 content">
-            <h1>Yuriesky Méndez</h1>
-            <h2> &nbsp; &nbsp; Software Developer</h2>
-            <br>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>September 19, 1983</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://ymlee0919.github.io/profile">https://ymlee0919.github.io/profile</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+5354881372">+53 54881372</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Residence:</strong> <span>Cuba</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>41</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's Degree</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:ymlee0919@gmail.com">ymlee0919@gmail.com</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3" style="line-height: 1.8;">
-              Software developer with over 15 years of experience in web and desktop programming, specialized in geographic applications, service management systems, and customized platforms. Passionate about innovation, creativity, and problem-solving through the use of efficient algorithms. Proactive, with strong communication skills and adaptability to learning new technologies.
-            </p>
-          </div>
+<a class="back-btn">
+    <span class="back-btn-label" onclick="backToMenu()">← Back to Main</span>
+    <span class="menu-btn" aria-label="Open slide menu"><span class="icon"><i></i><i></i><i></i></span></span>
+</a>
+
+
+    <div class="section-header">
+        <h2 class="section-title">About me</h2>
+        <p class="section-subtitle">Passionate programmer, committed to excellence</p>
+    </div>
+
+    <div class="about-content">
+        <div class="about-image">
+            <img src="/public/img/profile.jpg" alt="Yuriesky Méndez Lee">
         </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Professional Experience</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="p-3" style="box-shadow: 0px 5px 30px 0px rgba(240, 240, 240, 0.1);border-radius: 8px;">
-              <h3 class="resume-title">Technical Skills</h3>
-              <h4><small>Languages:</small></h4>
-              <p>JavaScript, TypeScript, C#, C++, PHP, HTML, CSS</p><br>
-              <h4><small>Frameworks and libraries:</small></h4>
-              <p>React, JQuery, NestJS, Express, ExtJs, Bootstrap, MaterializeCSS, TailwindCSS</p><br>
-              <h4><small>Databases:</small></h4>
-              <p>MySQL, PostgreSQL, PostGIS</p><br>
-              <h4><small>Maps and Geographic Systems:</small></h4>
-              <p>MapServer, Google Maps API, MapInfo, QuantumGIS, gvSIG</p><br>
-              <h4><small>Other Technologies:</small></h4>
-              <p>Git, GitHub, AMP, Payment platforms API</p>
+        <div class="about-text">
+            <h2>Yuriesky Méndez Lee</h2>
+            <h3>Lic. Computer Science</h3>
+            <div class="generals-list">
+                <div class="generals-list-item"><strong>Birthday:</strong> <span>September 19, 1983</span></div>
+                <div class="generals-list-item"><strong>Website:</strong> <span><a href="https://ymlee0919.github.io/profile">https://ymlee0919.github.io/profile</a></span></div>
+                <div class="generals-list-item"><strong>Age:</strong> <span id="age">40</span></div>
+                <div class="generals-list-item"><strong>Degree:</strong> <span>Bachelor's Degree</span></div>
+                <div class="generals-list-item"><strong>Phone:</strong> <span><a href="tel:+5354881372">+53 54881372</a></span></div>
+                <div class="generals-list-item"><strong>Email:</strong> <span><a href="mailto:ymlee0919@gmail.com">ymlee0919@gmail.com</a></span></div>
             </div>
-          </div>
+            <p>Software developer with over 15 years of experience in web and desktop programming, specialized in geographic applications, service management systems, and customized platforms. Passionate about innovation, creativity, and problem-solving through the use of efficient algorithms. Proactive, with strong communication skills and adaptability to learning new technologies.</p>
+        </div>
+    </div>
+    <div class="download-btn">
+        <a href="./public/docs/Profile-EN.pdf" class="intro-cta-primary">Download CV</a>
+    </div>
+    <div class="intro-tech">
+        <p class="tech-label">Hobbies</p>
+        <div class="tech-marquee">
+            <div class="tech-track">
+                <span class="tech-item">Swiming</span>
+                <span class="tech-item">Programming</span>
+                <span class="tech-item">Playing guitar</span>
+                <span class="tech-item">Exercising</span>
+                <span class="tech-item">Watching movies</span>
+                <span class="tech-item">Traveling</span>
+            </div>
+        </div>
+    </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+<div class="section-footer">
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="backToMenu()">&larr; Main</span>
+    </button>
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('experience')">Experience &rarr;</span>
+    </button>
+</div>
+				</div>
+
+				<!-- Experience Section -->
+				<div class="content-section" id="experience" data-abbr="EX" data-section="Experience" data-sub="From research to real-world impact">
+					<div class="section-header-small">
+    <div class="small-logo">
+        <img src="./public/img/logo-sm.png" width="200" height="200" style="max-width: 32px; max-height: 32px">
+    </div>
+    <div class="small-brand">
+        <h3>Yuriesky Méndez Lee</h3>
+        <p>Software Engineer</p>
+    </div>
+</div>
+
+<a class="back-btn">
+    <span class="back-btn-label" onclick="backToMenu()">← Back to Main</span>
+    <span class="menu-btn" aria-label="Open slide menu"><span class="icon"><i></i><i></i><i></i></span></span>
+</a>
+
+
+	<div class="section-header">
+		<h2 class="section-title">Professional Experience</h2>
+		<p class="section-subtitle">From research to real-world impact</p>
+	</div>
+
+    <section id="resume" class="resume section">
+        <div class="resume-card">
             <h3 class="resume-title">Academic</h3>
             <div class="resume-item pb-0">
-              <h4>University of Havana</h4>
-              <p><em>Cuba - 2008</em></p>
-              <ul>
-                <li>Bachelor's Degree in Cybernetics</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            
-            <h3 class="resume-title pt-5">Scientific Publications </h3>
+                <h4>University of Havana</h4>
+                <h5>Cuba - 2008</h5>
+                <ul>
+                    <li>Bachelor's Degree in Cybernetics</li>
+                </ul>
+            </div>
+            <!-- Edn Resume Item -->
+        </div>
+        
+        <div class="resume-card">
+            <h3 class="resume-title pt-5">Scientific Publications</h3>
             <div class="resume-item">
-              <h4>Data Mining applied to geography</h4>
-              <ul>
-                <li>
-                  Design and Implementation of a Data Mining Tool for the Cartographic Visualization of Spatial Association Rules (VCMD-RAE)<br>
-                  <a href="https://www.researchgate.net/publication/232423108_Diseno_e_Implementacion_de_una_Herramienta_de_Mineria_de_Datos_para_la_Visualizacion_Cartografica_de_las_Reglas_de_Asociacion_Espacial_VCMD-RAE">View article</a>
-                </li>
-                <li>
-                  o	gvSIG-WEKA: A Data Mining Tool Integrated into a GIS for Processing Geographic Cadastral Data<br>
-                  <a href="http://www.gvsig.com/es/divulgacion/articulos/-/asset_publisher/wRekmJIM0uNH/content/gvsig-weka-una-herramienta-de-mineria-de-datos-integrada-a-un-sistema-de-informacion-geografica-para-el-procesamiento-de-los-datos-geograficos-catastr">View article</a>
-                </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+                <h4>Data Mining applied to geography</h4>
+                <ul>
+                    <li>
+                        Design and Implementation of a Data Mining Tool for the Cartographic Visualization of Spatial Association Rules (VCMD-RAE)<br>
+                        <a style="margin-top: 4px;display:inline-block" class="btn-secondary" href="https://www.researchgate.net/publication/232423108_Diseno_e_Implementacion_de_una_Herramienta_de_Mineria_de_Datos_para_la_Visualizacion_Cartografica_de_las_Reglas_de_Asociacion_Espacial_VCMD-RAE">View article</a>
+                    </li>
+                    <li>
+                        gvSIG-WEKA: A Data Mining Tool Integrated into a GIS for Processing Geographic Cadastral Data<br>
+                        <a style="margin-top: 4px;display:inline-block" class="btn-secondary" href="http://www.gvsig.com/es/divulgacion/articulos/-/asset_publisher/wRekmJIM0uNH/content/gvsig-weka-una-herramienta-de-mineria-de-datos-integrada-a-un-sistema-de-informacion-geografica-para-el-procesamiento-de-los-datos-geograficos-catastr">View article</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Edn Resume Item -->
 
+        <div class="resume-card">
             <h3 class="resume-title pt-5">Work experience</h3>
             <div class="resume-item">
-              <h4>International Center for Communications, Caribe Earth Station</h4>
-              <h5>2021 - Present</h5>
-              <p><em>Telecommunications Specialist</em></p>
-              <ul>
-                <li>Operation and maintenance of RF equipment such as modulators, decoders, power amplifiers, up-converters, down-converters, LNA (Low Noise Amplifiers), and LNB (Low Noise Block converters).</li>
-                <li>Acquisition of technical knowledge in satellite communications, antenna operation, teleport management, and high-availability communication links.</li>
-                <li>Support in the operations of Cuba's largest satellite communications center.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+                <h4>International Center for Communications, Caribe Earth Station</h4>
+                <h5>2021 - Present</h5>
+                <p>
+                    <em>Telecommunications Specialist</em>
+                </p>
+                <ul>
+                    <li>Operation and maintenance of RF equipment such as modulators, decoders, power amplifiers, up-converters, down-converters, LNA (Low Noise Amplifiers), and LNB (Low Noise Block converters).</li>
+                    <li>Acquisition of technical knowledge in satellite communications, antenna operation, teleport management, and high-availability communication links.</li>
+                    <li>Support in the operations of Cuba's largest satellite communications center.</li>
+                </ul>
+            </div>
+            <!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>GardenCruz LLC & GlobalAction Ministry</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>Lead Developer</em></p>
-              <ul>
-                <li>Development of internal management applications in PHP tailored to the needs of both organizations.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+                <h4>GardenCruz LLC & GlobalAction Ministry</h4>
+                <h5>2020 - 2022</h5>
+                <p>
+                    <em>Lead Developer</em>
+                </p>
+                <ul>
+                    <li>Development of internal management applications in PHP tailored to the needs of both organizations.</li>
+                </ul>
+            </div>
+            <!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>CubanEden</h4>
-              <h5>2016 - 2020</h5>
-              <p><em>Lead Developer</em></p>
-              <ul>
-                <li>Creation of a web platform for managing tourist services in Cuba.</li>
-                <li>Development of an admin panel, owner profiles, and client interface.</li>
-                <li>Technical integrations: calendar synchronization with Airbnb, payments via Stripe.</li>
-                <li>Use of PHP, Bootstrap, MaterializeCSS, MySQL</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+                <h4>CubanEden</h4>
+                <h5>2016 - 2020</h5>
+                <p>
+                    <em>Lead Developer</em>
+                </p>
+                <ul>
+                    <li>Creation of a web platform for managing tourist services in Cuba.</li>
+                    <li>Development of an admin panel, owner profiles, and client interface.</li>
+                    <li>Technical integrations: calendar synchronization with Airbnb, payments via Stripe.</li>
+                    <li>Use of PHP, Bootstrap, MaterializeCSS, MySQL</li>
+                </ul>
+            </div>
+            <!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Agency for Research and Development Applied to Geomatics - Geocuba Pinar del Río</h4>
-              <h5>2008 - 2016</h5>
-              <p><em>Software Developer</em></p>
-              <ul>
-                <li>Development of a platform for web applications using PHP and ExtJs v3</li>
-                <li>Creation of a geographic information visualization system integrated with MapServer, Apache, and Postgres/PostGIS/PgRouting.</li>
-                <li>Experience with GIS tools such as MapInfo, QuantumGIS, and gvSIG.</li>
-                <li>Use of PHP, Bootstrap, MaterializeCSS, MySQL</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-          </div>
-
+                <h4>Agency for Research and Development Applied to Geomatics - Geocuba Pinar del Río</h4>
+                <h5>2008 - 2016</h5>
+                <p>
+                    <em>Software Developer</em>
+                </p>
+                <ul>
+                    <li>Development of a platform for web applications using PHP and ExtJs v3</li>
+                    <li>Creation of a geographic information visualization system integrated with MapServer, Apache, and Postgres/PostGIS/PgRouting.</li>
+                    <li>Experience with GIS tools such as MapInfo, QuantumGIS, and gvSIG.</li>
+                    <li>Use of PHP, Bootstrap, MaterializeCSS, MySQL</li>
+                </ul>
+            </div>
         </div>
+            <!-- End Resume Item -->
+    </section>
+    
 
-      </div>
 
-    </section><!-- /Resume Section -->
+<div class="section-footer">
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('about')">&larr; About</span>
+    </button>
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('skills')">Skills &rarr;</span>
+    </button>
+</div>
+				</div>
 
-    <!-- Personal Section -->
-    <section id="personal" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Personal projects</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-braces-asterisk"></i>
-              </div>
-              <a href="https://github.com/ymlee0919/arkit" class="stretched-link">
-                <h3>Arkit</h3>
-              </a>
-              <p>Web application development platform based on PHP</p>
-              <br>
-              <a href="https://github.com/ymlee0919/arkit" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-map icon"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>MsExt</h3>
-              </a>
-              <p>GIS Web application development platform based on MapServer and Ext Js</p>
-              <br>
-              <a href="https://github.com/ymlee0919/msext" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-joystick"></i>
-              </div>
-              <a href="https://github.com/ymlee0919/christian-match" class="stretched-link">
-                <h3>Christian Match</h3>
-              </a>
-              <p>Collection of Christian games for local churches, developed in C#.</p>
-              <br>
-              <a href="https://github.com/ymlee0919/christian-match" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-camera"></i>
-              </div>
-              <a href="https://github.com/ymlee0919/photoestudio" class="stretched-link">
-                <h3>PhotoEstudio</h3>
-              </a>
-              <p>Website for promoting a photography studio. Includes an admin panel. Developed in NestJs and React.</p>
-              <br>
-              <a href="https://github.com/ymlee0919/photoestudio" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-emoji-wink"></i>
-              </div>
-              <a href="https://github.com/ymlee0919/pekelin" class="stretched-link">
-                <h3>Pekelín</h3>
-              </a>
-              <p>Website for selling children's clothing. Includes an admin panel. Developed in NestJs and React.</p>
-              <br>
-              <a href="https://github.com/ymlee0919/pekelin" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div><!-- End Service Item -->
-        </div>
-
-      </div>
-
-    </section><!-- /Personal Section -->
-
-    <!-- Portfolio Section 
-    <section id="hobbies" class="portfolio section">
-
-      <!-- Section Title
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Hobbies</h2>
-        <p>
-          Small projects to learn technologies or improve my skills.
-        </p>
-      </div>
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 center-align">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call me</h3>
-                <a href="tel:+5354881372">+53 54 881372</a>
-              </div>
-            </div><!-- End Info Item -->
-          </div>
-          <div class="col-lg-6">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email me</h3>
-                <a href="mailto:ymlee0919@gmail.com">ymlee0919@gmail.com</a>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative dark-background">
-    <div class="container">
-      <h3 class="sitename">Yuriesky Méndez</h3>
-      <p>
-        Software Developer
-      </p>
-      <div class="social-links d-flex justify-content-center">
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100010586863647"><i class="bi bi-facebook"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/yuriesky-m%C3%A9ndez-lee-32419a124"><i class="bi bi-linkedin"></i></a>
-      </div>
+				<!-- Skills Section -->
+				<div class="content-section" id="skills" data-abbr="SK" data-section="Skills" data-sub="Technical strengths with a collaborative touch">
+					<div class="section-header-small">
+    <div class="small-logo">
+        <img src="./public/img/logo-sm.png" width="200" height="200" style="max-width: 32px; max-height: 32px">
     </div>
-  </footer>
+    <div class="small-brand">
+        <h3>Yuriesky Méndez Lee</h3>
+        <p>Software Engineer</p>
+    </div>
+</div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a class="back-btn">
+    <span class="back-btn-label" onclick="backToMenu()">← Back to Main</span>
+    <span class="menu-btn" aria-label="Open slide menu"><span class="icon"><i></i><i></i><i></i></span></span>
+</a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<div class="section-header">
+		<h2 class="section-title">Skills</h2>
+		<p class="section-subtitle">Technical strengths with a collaborative touch</p>
+	</div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+	<!-- Core Values -->
+	<div class="intro-values">
+		<div class="value-card">
+			<h3>Programming Languages</h3>
+			<p>JavaScript, TypeScript, C#, C++, PHP, HTML, CSS</p>
+		</div>
+		<div class="value-card">
+			<h3>Frameworks and libraries</h3>
+			<p>React, JQuery, NestJS, Express, ExtJs, Bootstrap, MaterializeCSS, TailwindCSS</p>
+		</div>
+		<div class="value-card">
+			<h3>Databases</h3>
+			<p>MySQL, PostgreSQL, PostGIS</p>
+		</div>
+		<div class="value-card">
+			<h3>Maps and Geographic Systems</h3>
+			<p>MapServer, Google Maps API, MapInfo, QuantumGIS, gvSIG</p>
+		</div>
+		<div class="value-card">
+			<h3>Other Technologies</h3>
+			<p>Git, GitHub, AMP, Payment platforms API</p>
+		</div>
+        <div class="value-card">
+			<h3>Other Skills</h3>
+			<p>SEO, QA Tester, Adobe Photoshop, Graphic Desing, Satellite Communication</p>
+		</div>
+	</div>
 
-</body>
 
+<div class="section-footer">
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('experience')">&larr; Experience</span>
+    </button>
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('personal')">Personal &rarr;</span>
+    </button>
+</div>
+				</div>
+
+				<!-- Personal Section -->
+				<div class="content-section" id="personal" data-abbr="PE" data-section="Personal" data-sub="Creative ideas turned into working code">
+					<div class="section-header-small">
+    <div class="small-logo">
+        <img src="./public/img/logo-sm.png" width="200" height="200" style="max-width: 32px; max-height: 32px">
+    </div>
+    <div class="small-brand">
+        <h3>Yuriesky Méndez Lee</h3>
+        <p>Software Engineer</p>
+    </div>
+</div>
+
+<a class="back-btn">
+    <span class="back-btn-label" onclick="backToMenu()">← Back to Main</span>
+    <span class="menu-btn" aria-label="Open slide menu"><span class="icon"><i></i><i></i><i></i></span></span>
+</a>
+
+
+    <div class="section-header">
+        <h2 class="section-title">Personal projects</h2>
+        <p class="section-subtitle">Creative ideas turned into working code</p>
+    </div>
+
+    <div class="tabs-container">
+        <div class="tab-content">
+            <div class="tab-pane active" id="personal">
+                <div class="services-list">
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/motion-design.jpg" alt="Arkit plarfom bases on PHP">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>Arkit</h4>
+                            <p>Web application development platform based on PHP</p>
+                            <br>
+                            <a href="https://github.com/ymlee0919/arkit" class="btn-secondary">View on GitHub</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/personal/msext.jpg" alt="MsExt GIS Web Framework">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>MsExt</h4>
+                            <p>GIS Web application development platform based on MapServer and Ext Js</p>
+                            <br>
+                            <a href="https://github.com/ymlee0919/msext" class="btn-secondary">View on GitHub</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/personal/christian-match.jpg" alt="Christian Match Application">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>Christian Match</h4>
+                            <p>Collection of Christian games for local churches, developed in C#</p>
+                            <br>
+                            <a href="https://ymlee0919.github.io/christian-match" class="btn-secondary">View</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/personal/fotostudio.jpg" alt="FotoStudio web application">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>FotoStudio</h4>
+                            <p>Website for promoting a photography studio. Includes an admin panel. Developed in NestJs and React.</p>
+                            <br>
+                            <a href="https://github.com/ymlee0919/photoestudio" class="btn-secondary">View on GitHub</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/personal/pekelin.jpg" alt="Pekelín business applications">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>Pekelín</h4>
+                            <p>Website for selling children's clothing. Includes an admin panel. Developed in NestJs and React.</p>
+                            <br>
+                            <a href="https://github.com/ymlee0919/pekelin" class="btn-secondary">View on GitHub</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="section-footer">
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('skills')">&larr; Skills</span>
+    </button>
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('work')">Work &rarr;</span>
+    </button>
+</div>
+				</div>
+
+				<!-- Works Section -->
+				<div class="content-section" id="work" data-abbr="WK" data-section="Work" data-sub="Professional solutions for practical needs">
+					<div class="section-header-small">
+    <div class="small-logo">
+        <img src="./public/img/logo-sm.png" width="200" height="200" style="max-width: 32px; max-height: 32px">
+    </div>
+    <div class="small-brand">
+        <h3>Yuriesky Méndez Lee</h3>
+        <p>Software Engineer</p>
+    </div>
+</div>
+
+<a class="back-btn">
+    <span class="back-btn-label" onclick="backToMenu()">← Back to Main</span>
+    <span class="menu-btn" aria-label="Open slide menu"><span class="icon"><i></i><i></i><i></i></span></span>
+</a>
+
+
+    <div class="section-header">
+        <h2 class="section-title">Work</h2>
+        <p class="section-subtitle">Professional solutions for practical needs</p>
+    </div>
+
+    <div class="tabs-container">
+        <div class="tab-content">
+            <div class="tab-pane active" id="work">
+                <div class="services-list">
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/work/swiftwolfhauling.jpg" alt="Swift Wolf Hauling website">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>Swift Wolf Hauling</h4>
+                            <p>Website to promote junk removal service in Colorado</p>
+                            <br>
+                            <a href="https://swiftwolfhauling.com" class="btn-secondary">Visit website</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/work/blackeagleremoval.jpg" alt="Black Eagle Removal website">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>Black Eagle Removal</h4>
+                            <p>Website to promote junk removal service in Colorado</p>
+                            <br>
+                            <a href="https://blackeagleremoval.com" class="btn-secondary">Visit website</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+
+                    <div class="service-row">
+                        <div class="service-row-icon">
+                            <img src="/public/img/work/livanricardo.jpg" alt="Livan Ricardo Profile">
+                        </div>
+                        <div class="service-row-content">
+                            <h4>Artist portfolio</h4>
+                            <p>Personal porfolio for Cuban artist, Livan Ricardo.</p>
+                            <br>
+                            <a href="https://livanricardo.pages.dev" class="btn-secondary">Visit website</a>
+                        </div>
+                        <div class="service-row-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="section-footer">
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('skills')">&larr; Skills</span>
+    </button>
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('contact')">Contact &rarr;</span>
+    </button>
+</div>
+				</div>
+
+				<!-- Contact Section -->
+				<div class="content-section" id="contact" data-abbr="CT" data-section="Contact" data-sub="Let's create something amazing together">
+					<div class="section-header-small">
+    <div class="small-logo">
+        <img src="./public/img/logo-sm.png" width="200" height="200" style="max-width: 32px; max-height: 32px">
+    </div>
+    <div class="small-brand">
+        <h3>Yuriesky Méndez Lee</h3>
+        <p>Software Engineer</p>
+    </div>
+</div>
+
+<a class="back-btn">
+    <span class="back-btn-label" onclick="backToMenu()">← Back to Main</span>
+    <span class="menu-btn" aria-label="Open slide menu"><span class="icon"><i></i><i></i><i></i></span></span>
+</a>
+
+
+    <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Let's create something amazing together</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-form">
+            <form action="https://submit-form.com/kZkaBlKXM">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                </div>
+                <button class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <a class="contact-item" href="mailto:ymlee0919@gmail.com">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <polyline fill="none" points="4 8.2 12 14.1 20 8.2" stroke="#019efd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        <rect fill="none" height="14" rx="2" ry="2" stroke="#019efd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="6.5"/>
+                    </svg>
+                </div>
+                <div class="contact-details">
+                    <h4>Email</h4>
+                    <p>ymlee0919@gmail.com</p>
+                </div>
+            </a>
+            <a class="contact-item" href="https://wa.me/529834729729?text=">
+                <div class="contact-icon">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#019efd" fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"/>
+                    </svg>
+                </div>
+                <div class="contact-details">
+                    <h4>WhatsApp</h4>
+                    <p>+52 983 472 9729</p>
+                </div>
+            </a>
+            <a class="contact-item" href="https://t.me/ymlee0919?text=">
+                <div class="contact-icon">
+                    <svg width="24px" height="24px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="#019efd" stroke-width="12" d="M23.073 88.132s65.458-26.782 88.16-36.212c8.702-3.772 38.215-15.843 38.215-15.843s13.621-5.28 12.486 7.544c-.379 5.281-3.406 23.764-6.433 43.756-4.54 28.291-9.459 59.221-9.459 59.221s-.756 8.676-7.188 10.185c-6.433 1.509-17.027-5.281-18.919-6.79-1.513-1.132-28.377-18.106-38.214-26.404-2.649-2.263-5.676-6.79.378-12.071 13.621-12.447 29.891-27.913 39.728-37.72 4.54-4.527 9.081-15.089-9.837-2.264-26.864 18.483-53.35 35.835-53.35 35.835s-6.053 3.772-17.404.377c-11.351-3.395-24.594-7.921-24.594-7.921s-9.08-5.659 6.433-11.693Z"/></svg>
+                </div>
+                <div class="contact-details">
+                    <h4>Telegram</h4>
+                    <p>@ymlee0919</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+<div class="section-footer">
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="switchSection('work')">&larr; Work</span>
+    </button>
+    <button class="footer-btn">
+        <span class="mi-arr" onClick="backToMenu()">Main &rarr;</span>
+    </button>
+</div>
+				</div>
+
+				<!-- Footer -->
+				<footer class="footer" id="mainFooter">
+					<p>
+						Yuriesky Méndez Lee | Software Engineer | Lic. Computer Science
+					</p>
+				</footer>
+			</div>
+
+			<!-- POPUP MENU -->
+			<div class="menu-overlay" id="menuOverlay"></div>
+			<div class="menu-panel" id="menuPanel" role="dialog" aria-label="Slide navigation">
+				<div class="menu-header">
+					<h3>Go to</h3>
+				</div>
+				<div class="menu-list" id="menuList"></div>
+			</div>
+
+			<script src="./public/js/scripts.js"></script>
+		</body>
+	</body>
 </html>
