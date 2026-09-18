@@ -505,29 +505,42 @@ body {
 	display: flex;
 	top: 20px;
 	right: 20px;
-	padding: 12px 24px;
 	background: var(--glass-bg);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	border: 1px solid var(--glass-border);
 	border-radius: 50px;
+	z-index: 100;
+}
+
+.back-btn > a { 
+	padding: 11px 20px;
+	transition: all 0.3s ease;
 	color: rgba(255, 255, 255, 0.8);
 	font-family: 'Outfit', sans-serif;
 	font-size: 13px;
 	letter-spacing: 2px;
 	cursor: pointer;
-	transition: all 0.3s ease;
-	z-index: 100;
 }
 
-.back-btn-label:hover, .menu-btn:hover {
+.back-btn > a:first-child {
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.back-btn > a:last-child {
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.back-btn > a:hover {
 	color: var(--primary);
 	text-shadow: 0 0 10px var(--glow-cyan);
+	box-shadow: 0 0 10px var(--glow-cyan);
 }
 
 .back-btn-label { 
-	padding-right: 10px;
-    border-right: 1px solid var(--primary);
+    border-right: 1px solid var(--glass-border);
 }
 
 /* Section Content */
@@ -1517,7 +1530,7 @@ body {
 	background-clip: text;
 	display: inline;
 
-  line-height: 18px;
+  line-height: 1.4;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2002,8 +2015,8 @@ body {
 /*****************
 * MENU
 *******************/
-.menu-btn {margin-top: 2px; padding-left: 10px;}
-.menu-btn .icon{display:flex;flex-direction:column;gap:3px;align-items:center}
+.menu-btn {padding-left: 10px;}
+.menu-btn .icon{display:flex;flex-direction:column;gap:3px;align-items:center; margin-top: 2px;}
 .menu-btn .icon i{display:block;width:14px;height:1.5px;background:currentColor;border-radius:1px;transition:all .3s var(--ee)}
 .menu-btn.open .icon i:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
 .menu-btn.open .icon i:nth-child(2){opacity:0;transform:scaleX(0)}
@@ -2011,7 +2024,7 @@ body {
 
 .menu-overlay{position:fixed;inset:0;background:rgba(10,14,26,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:200;opacity:0;visibility:hidden;transition:opacity .35s var(--ee),visibility .35s}
 .menu-overlay.open{opacity:1;visibility:visible}
-.menu-panel{position:fixed;top:50%;left:50%;transform:translate(-50%,-48%) scale(.96);width:min(560px,92vw);max-height:84vh;overflow-y:auto;overflow-x:hidden;background:linear-gradient(180deg,rgba(20,24,42,.95) 0%,rgba(13,18,32,.95) 100%);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,.14);border-radius:24px;z-index:201;opacity:0;visibility:hidden;transition:opacity .4s var(--ee),visibility .4s,transform .5s var(--es);box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 60px rgba(99,102,241,.15);scrollbar-width:thin;scrollbar-color:rgba(165,180,252,.4) transparent}
+.menu-panel{position:fixed;top:50%;left:50%;transform:translate(-50%,-48%) scale(.96);width:min(560px,92vw);max-height:84vh;overflow-y:auto;overflow-x:hidden;background:linear-gradient(180deg,rgba(20,24,42,.95) 0%,rgba(13,18,32,.95) 100%);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,.14);border-radius:16px;z-index:201;opacity:0;visibility:hidden;transition:opacity .4s var(--ee),visibility .4s,transform .5s var(--es);box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 60px rgba(99,102,241,.15);scrollbar-width:thin;scrollbar-color:rgba(165,180,252,.4) transparent}
 /* Custom scrollbar — WebKit / Blink */
 .menu-panel::-webkit-scrollbar{width:10px;height:10px}
 .menu-panel::-webkit-scrollbar-track{background:transparent;margin:18px 0;border-radius:100px}
@@ -2027,7 +2040,7 @@ body {
 .menu-item{display:flex;align-items:center;gap:18px;padding:14px 18px;border-radius:14px;cursor:pointer;transition:all .25s var(--ee);border:1px solid transparent}
 .menu-item:hover{background:rgba(255,255,255,.05);border-color:var(--line)}
 .menu-item.current{background:linear-gradient(90deg,rgba(99,102,241,.18),rgba(236,72,153,.08));border-color:rgba(99,102,241,.3)}
-.menu-item .mi-num{font-family:var(--font-mono);font-size:11px;color:var(--primary);letter-spacing:.15em;width:28px;flex-shrink:0}
+.menu-item .mi-num{font-family:var(--font-mono);font-size:11px;color:var(--primary);letter-spacing:.15em;width:28px;flex-shrink:0;font-weight: 600;}
 .menu-item.current .mi-num{color:var(--indigo-soft)}
 .menu-item .mi-label{font-family:var(--font-sans);font-weight:500;font-size:15px;letter-spacing:-.01em;flex:1}
 .menu-item .mi-sub{font-size:12px;color:var(--primary-text);margin-top:2px}
